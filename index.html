@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lagos, a Soundscape</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Lagos</h1>
+  <p class="intro">
+    Lagos is a city in Nigeria. It is where I was born and raised, and it holds
+    many of my favourite memories. Click a photo to hear the sounds of the street.
+    Click it again to stop. Press play on the video to watch a concert I went to.
+  </p>
+
+  <div class="photo-grid">
+
+    <button class="photo-card" data-sound="audio/street.mp3">
+      <img src="images/unilag.jpg" alt="The main gate of the University of Lagos">
+      <span class="place">UNILAG</span>
+      <span class="caption">The University of Lagos. I went to nursery, primary, and secondary school here.</span>
+      <span class="status">Click to play</span>
+    </button>
+
+    <button class="photo-card" data-sound="audio/street.mp3">
+      <img src="images/lekki.jpg" alt="An aerial view of Lekki and the water">
+      <span class="place">Lekki</span>
+      <span class="caption">Some of my family lives here. I always loved visiting them.</span>
+      <span class="status">Click to play</span>
+    </button>
+
+    <button class="photo-card" data-sound="audio/street.mp3">
+      <img src="images/amuwo-odofin.jpg" alt="Apartment buildings and parked cars in Amuwo Odofin">
+      <span class="place">Amuwo Odofin</span>
+      <span class="caption">The area I grew up in. It is very close to Festac, where my paternal grandparents and family lived.</span>
+      <span class="status">Click to play</span>
+    </button>
+
+    <div class="video-card" id="video-card">
+      <video id="concert-video" controls playsinline preload="metadata" src="video/concert.mp4"></video>
+      <span class="place">The concert</span>
+      <span class="caption">A Fireboy concert I went to. It was so much fun.</span>
+    </div>
+
+  </div>
+
+  <h2>The full soundscape</h2>
+  <p class="intro">One audio file that mixes all of the sounds together.</p>
+  <audio id="soundscape" controls src="audio/lagos-soundscape.mp3"></audio>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
